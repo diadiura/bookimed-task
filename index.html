@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookimed</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <button class="header__button">
+          <img src="images/arrow_back.svg" alt="" />
+        </button>
+        <div class="header__title">
+          <img src="images/Logo.svg" alt="logo" />
+          <p class="header__text">Personal space</p>
+        </div>
+      </header>
+      <section class="clinic-selection">
+        <div class="progress-bar">
+          <div class="progress-bar__container">
+            <div class="progress-bar__progress"></div>
+          </div>
+          <div class="progress-bar__container"></div>
+          <div class="progress-bar__container"></div>
+        </div>
+        <p class="clinic-selection__text">Clinic selection</p>
+        <select name="" id="" class="select-country select">
+          <option value="Turkey" selected>Turkey</option>
+          <option value="Korea">Korea</option>
+          <option value="Japan">Japan</option>
+        </select>
+        <select name="" id="" class="select-disease select">
+          <option value="bone cancer" selected>Bone cancer</option>
+          <option value="brain cancer">Brain cancer</option>
+          <option value="skin cancer">Skin cancer</option>
+        </select>
+      </section>
+      <section class="clinic section">
+        <div class="clinic__recomendstion-bar">
+          <div class="clinic__img">
+            <img src="images/clinic_image.png" alt="" />
+          </div>
+        </div>
+        <div class="clinic__recommendation">
+          <p>99% Recommended</p>
+        </div>
+        <p class="clinic__name">Istanbul Aesthetic Plastic Surgery Center</p>
+        <div class="clinic__rating">
+          <img src="images/Star.svg" alt="star" class="star" />
+          <p class="clinic__rating-text">4.9 Excellent</p>
+          <div class="dividing-dot"></div>
+          <p class="clinic__rating-text">328 reviewes</p>
+        </div>
+        <div class="clinic__information">
+          <div class="clinic__location characteristic">
+            <img src="images/location_icon.svg" alt="" />
+            <p>Turkey, Istanbul</p>
+          </div>
+          <div class="clinic__awards characteristic">
+            <img src="images/award_icon.svg" alt="" />
+            <p>
+              Highest-Rated
+              <span id="disease-placeholder">{illness_kind}</span> Clinic by
+              <br />
+              Patients
+            </p>
+          </div>
+          <div class="hidden-content characteristic">
+            <p>Hidden content</p>
+          </div>
+          <div class="view-more">
+            <div class="grey-line"></div>
+            <div class="view-more__text">
+              View more <img src="images/arrow_down_grey.svg" alt="" />
+            </div>
+            <div class="grey-line"></div>
+          </div>
+        </div>
+      </section>
+      <section class="doctor section">
+        <p class="subtitle">About doctor</p>
+        <div class="doctor__personality">
+          <img
+            src="images/doctor_image.svg"
+            alt="photo"
+            class="doctor__image"
+          />
+          <p class="doctor__name">Dr. Cengiz Yaylaci</p>
+        </div>
+        <div class="doctor__information">
+          <div class="doctor__field characteristic">
+            <img src="images/award-neck_icon.svg" alt="" />
+            <p>
+              Leading Doctor for
+              <span id="procedure_placeholder">{procedure_id}</span>
+            </p>
+          </div>
+          <div class="doctor__experience characteristic">
+            <img src="images/briefcase_icon.svg" alt="" />
+            <p>18 years of experience</p>
+            <div class="dividing-dot"></div>
+            <p>10K+ treatments</p>
+          </div>
+          <div class="doctor__education characteristic">
+            <img src="images/graduation-hat_icon.svg" alt="" />
+            <p>Certified professional</p>
+          </div>
+          <div class="hidden-content characteristic">
+            <p>Hidden content</p>
+          </div>
+          <div class="view-more">
+            <div class="grey-line"></div>
+            <div class="view-more__text">
+              View more <img src="images/arrow_down_grey.svg" alt="" />
+            </div>
+            <div class="grey-line"></div>
+          </div>
+        </div>
+      </section>
+      <section class="options section">
+        <h2>Select option</h2>
+        <div class="info options__info">
+          <img src="images/medical procedure.svg" alt="" />
+          <div class="info__info">
+            <h3 class="info__title">
+              Showcase available options & price ranges
+            </h3>
+            <p class="info__text">
+              Send a request, and the clinic will adapt a program for your needs
+            </p>
+          </div>
+        </div>
+        <div class="option">
+          <label>
+            <input type="radio" name="option" />
+            <div class="option__content">
+              <div class="option__top">
+                <h3>Diagnostics</h3>
+                <div class="radio">
+                  <img src="images/check.svg" alt="Radio Check" />
+                </div>
+              </div>
+              <div class="dividing-line"></div>
+              <div class="option__details">
+                <span>$500 - $1000</span>
+                <a href="#">View details</a>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="option">
+          <label>
+            <input type="radio" name="option" />
+            <div class="option__content">
+              <div class="option__top">
+                <h3>Treatment</h3>
+                <div class="radio">
+                  <img src="images/check.svg" alt="Radio Check" />
+                </div>
+              </div>
+              <div class="dividing-line"></div>
+              <p>Radiotherapy + System Therapy</p>
+              <div class="option__details">
+                <span>$3500 - $5000</span>
+                <a href="#">View details</a>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div class="option">
+          <label>
+            <input type="radio" name="option" />
+            <div class="option__content">
+              <div class="option__top">
+                <h3>I need diagnostic and treatment</h3>
+                <div class="radio">
+                  <img src="images/check.svg" alt="Radio Check" />
+                </div>
+              </div>
+              <div class="dividing-line"></div>
+              <div class="option__details">
+                <span>$4000 - $6000</span>
+                <a href="#">View details</a>
+              </div>
+            </div>
+          </label>
+        </div>
+      </section>
+      <section class="warranty section">
+        <h3 class="subtitle">Warranty</h3>
+        <div class="info">
+          <img src="images/shieldCheck_icon.svg" alt="" />
+          <div class="info__info">
+            <p class="info__text">
+              This clinic provides a warranty for the services provided.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="includes section">
+        <h3 class="subtitle">What doesn’t include?</h3>
+        <div class="includes__hotel characteristic">
+          <img src="images/accomodation_icon.svg" alt="" />
+          <p>Hotel</p>
+        </div>
+        <div class="includes__airfare characteristic">
+          <img src="images/Airplane_icon.svg" alt="" />
+          <p>Airfare</p>
+        </div>
+      </section>
+      <section class="payment section">
+        <h3 class="subtitle">Payment method</h3>
+        <div class="info">
+          <img src="images/CreditCard_icon.svg" alt="" />
+          <div class="info__info payment__info">
+            No payment is needed now. You will be charged directly at the clinic
+            when you arrive.
+          </div>
+        </div>
+      </section>
+      <section class="reviews section">
+        <h3 class="subtitle">Ratings & Reviews</h3>
+        <div class="clinic__rating">
+          <img src="images/Star.svg" alt="star" class="star" />
+          <p class="clinic__rating-text reviews__rate">4.9 Excellent</p>
+          <div class="dividing-dot"></div>
+          <p class="clinic__rating-text">328 reviewes</p>
+        </div>
+        <div class="hidden-content characteristic">
+          <p>Hidden content</p>
+        </div>
+        <div class="view-more">
+          <div class="grey-line"></div>
+          <div class="view-more__text">
+            View more <img src="images/arrow_down_grey.svg" alt="" />
+          </div>
+          <div class="grey-line"></div>
+        </div>
+        <div class="review">
+          <div class="client">
+            <div class="client__avatar">
+              <img src="images/user_icon.svg" alt="" class="client__photo" />
+            </div>
+            <div class="client__info">
+              <p class="client__name">Omaphefo Rakwaboah</p>
+              <div class="client__country">
+                <img src="images/United Kingdom.svg" alt="UK" />United Kindom
+              </div>
+            </div>
+          </div>
+          <div class="client_rating">
+            <div class="stars">
+              <img src="images/small_star.svg" alt="" />
+              <img src="images/small_star.svg" alt="" />
+              <img src="images/small_star.svg" alt="" />
+              <img src="images/small_star.svg" alt="" />
+              <img src="images/small_star.svg" alt="" />
+            </div>
+            <p class="verified_review">Verified review</p>
+            <img src="images/Info.svg" alt="" class="info__icon" />
+          </div>
+          <p class="review__date">23 Nov, 2023</p>
+          <h3 class="review__title">The whole experiens was very good</h3>
+          <div class="review__content">
+            <div class="review__images">
+              <img src="images/image 9.png" alt="" />
+              <img src="images/image 10.png" alt="" />
+              <img src="images/image 11.png" alt="" />
+              <img src="images/image 12.png" alt="" />
+            </div>
+            <div class="review__text">
+              The stay at the hospital was exellent. The hotel was very clean
+              and the food in the bar was lovely! Doctor Gurhan Ozcan and staf
+              were first class
+              <p class="hidden-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                totam, reprehenderit similique possimus quis necessitatibus sit
+                ipsa sint excepturi quaerat nulla quo quam aliquam a corrupti
+                pariatur ea vero cupiditate.
+              </p>
+              <p class="read-more">Read more</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="price section">
+        <h3 class="subtitle">Price</h3>
+        <div class="price__value">
+          <div class="price__symbol">$-</div>
+          <div class="price__total">Complete option to get a cost estimate</div>
+        </div>
+        <button class="button__accept button">
+          <img src="images/plus.svg" alt="" />Add to my request
+        </button>
+        <button class="button__not-sure button">Not sure</button>
+      </section>
+      <div class="home-indicator"></div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
