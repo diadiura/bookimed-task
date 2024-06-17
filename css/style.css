@@ -16,7 +16,6 @@
   align-items: center;
   padding: 24px 16px 24px 16px;
   border-radius: 20px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 8px;
   overflow: hidden;
 }
@@ -30,7 +29,7 @@
   display: flex;
   gap: 12px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   color: #101828;
   margin-bottom: 8px;
   line-height: 20px;
@@ -68,9 +67,9 @@
 /* заголовок секцій */
 .subtitle {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 20px;
-  color: #344054;
+  color: #101828;
   text-align: left;
   width: 100%;
   margin-bottom: 16px;
@@ -85,7 +84,7 @@
   gap: 8px;
   background-color: #f0fdf4;
   border-radius: 8px;
-  font-weight: 400;
+  font-weight: 300;
 }
 .info__info {
   color: rgb(20, 83, 45);
@@ -93,7 +92,7 @@
   line-height: 20px;
 }
 .info__title {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* хедер */
@@ -114,7 +113,7 @@ header {
 }
 .header__text {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 140%;
   min-height: 20px;
 }
@@ -151,21 +150,35 @@ header {
 .select {
   border-radius: 24px;
   border: 1px solid #16a34a;
-  /* background: #f0fdf4 url("../images/arrow_down.svg") no-repeat calc(100% - 7px)
-    center; */
+  background: #f0fdf4;
+  background-image: url("../images/arrow_down_green.svg");
+  background-repeat: no-repeat;
+  top: 0%;
+	background-position-y: 52%;
   color: #166534;
   text-align: center;
   font-size: 14px;
   font-weight: 500;
   padding: 6px 8px;
+  padding-right: 25px;
   margin-top: 42px;
   margin-bottom: 24px;
+  /* Firefox */
+  -moz-appearance: none;
+  /*Chrome */
+  -webkit-appearance: none;
+}
+.select::-ms-expand {
+  /* IE */
+  display: none;
 }
 .select-country {
   margin-left: 16px;
+  background-position-x: 91%;
 }
 .select-disease {
   margin-left: 8px;
+  background-position-x: 95%;
 }
 
 /* обрана клініка */
@@ -203,8 +216,8 @@ header {
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.15);
   background: linear-gradient(90deg, rgb(26, 137, 67), rgb(75, 236, 135) 100%);
   color: #fff;
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
 }
 .clinic__name {
   font-size: 24px;
@@ -219,7 +232,7 @@ header {
   gap: 8px;
   margin-bottom: 24px;
   color: #101828;
-  font-weight: 400;
+  font-weight: 300;
 }
 .star {
   margin-right: -6px;
@@ -248,11 +261,14 @@ header {
   font-weight: 500;
   line-height: 24px;
 }
+.doctor__field p {
+  color: #1d4ed8;
+}
 
 /* опції послуг */
 .options h2 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 28px;
   text-align: left;
   width: 100%;
@@ -271,15 +287,16 @@ header {
   align-items: center;
   cursor: pointer;
   width: 100%;
+  color: #101828;
 }
-.option h2 {
+.option h3 {
   font-size: 18px;
   margin: 0;
-  color: #333;
+  /* color: #101828; */
 }
 .option p {
   font-size: 14px;
-  color: #666;
+  /* color: #101828; */
 }
 .option label {
   display: flex;
@@ -297,11 +314,12 @@ header {
 .option__content h3 {
   font-size: 16px;
   margin: 0;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
+  font-weight: 400;
 }
 .option__content p {
   font-size: 14px;
-  color: #666;
+  /* color: #101828; */
   margin: 0;
 }
 .option__top {
@@ -313,7 +331,7 @@ header {
 .option__top h3,
 .option__content p {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 24px;
   color: #101828;
 }
@@ -326,8 +344,8 @@ header {
 }
 .option__details span {
   font-size: 16px;
-  font-weight: 500;
-  color: #333;
+  font-weight: 400;
+  color: #101828;
 }
 .option__details a {
   font-size: 14px;
@@ -362,6 +380,7 @@ header {
   height: 1px;
   width: 279px;
   background-color: #eaecf0;
+  margin: 0 auto;
 }
 
 .includes__airfare {
@@ -378,7 +397,7 @@ header {
   margin-bottom: 0;
 }
 .reviews__rate {
-  font-weight: 500;
+  font-weight: 400;
 }
 .client {
   display: flex;
@@ -398,12 +417,12 @@ header {
 }
 .client__name {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 20px;
 }
 .client__country {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 16px;
   color: #475467;
   margin-top: 4px;
@@ -425,7 +444,7 @@ header {
 .verified_review {
   margin-right: 4px;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 16px;
   color: #b54708;
 }
@@ -436,7 +455,7 @@ header {
 }
 .review__date {
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 16px;
   color: #475467;
   margin-bottom: 4px;
@@ -444,7 +463,7 @@ header {
 }
 .review__title {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 24px;
   color: #101828;
 }
@@ -467,7 +486,7 @@ header {
 
 .review__text {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 24px;
   color: #475467;
 }
@@ -482,6 +501,23 @@ header {
   display: none;
 }
 
+.indicator-container {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.indicator.active {
+ 
+}
+
 /* ціна */
 .price__value {
   display: flex;
@@ -491,18 +527,18 @@ header {
 }
 .price__symbol {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   /* line-height: 28px; */
 }
 .price__total {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 20px;
   color: #344054;
 }
 .button {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 24px;
   width: 100%;
   box-sizing: border-box;
@@ -510,7 +546,12 @@ header {
   border-radius: 8px;
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   height: 48px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
 }
+
 .button__accept {
   background-color: #15803d;
   color: #fff;
@@ -529,3 +570,4 @@ header {
   margin: 30px auto 8px;
   border-radius: 100px;
 }
+
