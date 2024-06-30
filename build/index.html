@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookimed</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <button class="header__button">
+          <img src="images/arrow_back.svg" alt="" />
+        </button>
+        <div class="header__title">
+          <img src="images/Logo.svg" alt="logo" />
+          <p class="header__text">Personal space</p>
+        </div>
+      </header>
+
+      <!-- clinic selection -->
+      <section class="clinic-selection">
+        <div class="progress-bar">
+          <div class="progress-bar__container">
+            <div class="progress-bar__progress"></div>
+          </div>
+          <div class="progress-bar__container"></div>
+          <div class="progress-bar__container"></div>
+        </div>
+        <h3 class="clinic-selection__text">Clinic selection</h3>
+
+        <div class="select">
+          <div class="select__wrapper">
+            <div class="country-selector">
+              <div class="select__field">
+                <div class="choose-country select__text">Choose country</div>
+                <img
+                  class="green-arrow"
+                  src="images/arrow_down_green.svg"
+                  alt=""
+                />
+              </div>
+              <ul class="list hide">
+                <li class="select__options country__options">
+                  <img src="images/TR.svg" alt="" />
+                  <p>Turkey</p>
+                </li>
+                <li class="select__options country__options">
+                  <img src="images/TR.svg" alt="" />
+                  <p>Albania</p>
+                </li>
+                <li class="select__options country__options">
+                  <img src="images/TR.svg" alt="" />
+                  <p>Japan</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="disease-selector">
+              <div class="select__field">
+                <div class="choose-disease select__text">Choose disease</div>
+                <img
+                  class="green-arrow"
+                  src="images/arrow_down_green.svg"
+                  alt=""
+                />
+              </div>
+              <ul class="list hide">
+                <li class="select__options disease__options">
+                  <p>Brain cancer</p>
+                </li>
+                <li class="select__options disease__options">
+                  <p>Bone cancer</p>
+                </li>
+                <li class="select__options disease__options">
+                  <p>Rhinoplasty (nose job)</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- clinic section -->
+      <section class="clinic section">
+        <div class="clinic__recomendation-bar">
+          <div class="clinic__img">
+            <img src="images/clinic_image.png" alt="" />
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="160px">
+            
+            <circle cx="64" cy="80" r="62" stroke-linecap="round"  />
+    </svg>
+        </div>
+        <div class="clinic__recommendation-text">
+          <p id="percentage-field">99% Recommended</p>
+        </div>
+        <div class="clinic__title">
+          <h3 class="clinic__name">
+            Istanbul Aesthetic Plastic Surgery Center
+          </h3>
+          <div class="clinic__points">
+            <img src="images/Star.svg" alt="star" class="star" />
+            <p class="clinic__rating-text">4.9 Excellent</p>
+            <div class="dividing-dot"></div>
+            <p class="clinic__rating-text">328 reviewes</p>
+          </div>
+        </div>
+        <div class="clinic__information">
+          <div class="clinic__location characteristic">
+            <img src="images/location_icon.svg" alt="" />
+            <p>Turkey, Istanbul</p>
+          </div>
+          <div class="clinic__awards characteristic">
+            <img src="images/award_icon.svg" alt="" />
+            <p>
+              Highest-Rated
+              <span id="disease-placeholder">{illness_kind}</span> Clinic by
+              Patients
+            </p>
+          </div>
+        </div>
+        <div class="hidden-content characteristic">
+          <p>Hidden content</p>
+        </div>
+        <div class="view-more">
+          <div class="grey-line"></div>
+          <div class="view-more__text">
+            <span>View more</span> <img src="images/arrow_down_grey.svg" alt="" />
+          </div>
+          <div class="grey-line"></div>
+        </div>
+      </section>
+
+      <!-- doctor section -->
+      <section class="doctor section">
+        <div class="doctor__content">
+          <h3 class="subtitle">About doctor</h3>
+          <div class="doctor__personality">
+            <img
+              src="images/doctor_image.svg"
+              alt="photo"
+              class="doctor__image"
+            />
+            <p class="doctor__name">Dr. Cengiz Yaylaci</p>
+          </div>
+          <div class="doctor__information">
+            <div class="doctor__field characteristic">
+              <img src="images/award-neck_icon.svg" alt="" />
+              <p>
+                Leading Doctor for
+                <span id="procedure_placeholder">{procedure_id}</span>
+              </p>
+            </div>
+            <div class="doctor__experience characteristic">
+              <img src="images/briefcase_icon.svg" alt="" />
+              <p>18 years of experience</p>
+              <div class="dividing-dot"></div>
+              <p>10K+ treatments</p>
+            </div>
+            <div class="doctor__education characteristic">
+              <img src="images/graduation-hat_icon.svg" alt="" />
+              <p>Certified professional</p>
+            </div>
+          </div>
+          <div class="hidden-content characteristic">
+            <p>Hidden content</p>
+          </div>
+          <div class="view-more">
+            <div class="grey-line"></div>
+            <div class="view-more__text">
+             <span> View more</span> <img src="images/arrow_down_grey.svg" alt="" />
+            </div>
+            <div class="grey-line"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- options section -->
+      <section class="options section">
+        <div class="options__top">
+          <h2>Select option</h2>
+          <div class="info options__info">
+            <img src="images/medical procedure.svg" alt="" />
+            <div class="info__info">
+              <h3 class="info__title">
+                Showcase available options & price ranges
+              </h3>
+              <p class="info__text">
+                Send a request, and the clinic will adapt a program for your
+                needs
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="options__wrapper">
+          <div class="option">
+              <div class="option__content">
+                <div class="option__top">
+                  <h3>Diagnostics</h3>
+                  <div class="radio">
+                    <img src="images/check.svg" alt="Radio Check" />
+                  </div>
+                </div>
+                <hr class="dividing-line">
+                <div class="option__bottom">
+                  <div class="option__details">
+                    <span>$500 - $1000</span>
+                    <a href="#">View details</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="option">
+              <div class="option__content">
+                <div class="option__top">
+                  <h3>Treatment</h3>
+                  <div class="radio">
+                    <img src="images/check.svg" alt="Radio Check" />
+                  </div>
+                </div>
+                <div class="dividing-line"></div>
+                <div class="option__bottom">
+                  <h3>Radiotherapy+System Therapy</h3>
+                  <div class="option__details">
+                    <span>$3500 - $5000</span>
+                    <a href="#">View details</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="option">
+              <div class="option__content">
+                <div class="option__top">
+                  <h3>I need diagnostic and treatment</h3>
+                  <div class="radio">
+                    <img src="images/check.svg" alt="Radio Check" />
+                  </div>
+                </div>
+                <div class="dividing-line"></div>
+                <div class="option__bottom">
+                  <div class="option__details">
+                    <span>$4000 - $6000</span>
+                    <a href="#"></a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- warranty section -->
+      <section class="warranty section">
+        <h3 class="subtitle">Warranty</h3>
+        <div class="info">
+          <img src="images/shieldCheck_icon.svg" alt="" />
+          <div class="info__info">
+            <p class="info__text">
+              This clinic provides a warranty for the services provided.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- includes section -->
+      <section class="includes section">
+        <h3 class="subtitle">What doesn’t include?</h3>
+        <div class="includes__hotel characteristic">
+          <img src="images/accomodation_icon.svg" alt="" />
+          <p>Hotel</p>
+        </div>
+        <div class="includes__airfare characteristic">
+          <img src="images/Airplane_icon.svg" alt="" />
+          <p>Airfare</p>
+        </div>
+      </section>
+
+      <!-- payment section -->
+      <section class="payment section">
+        <h3 class="subtitle">Payment method</h3>
+        <div class="info info-payment">
+          <img src="images/CreditCard_icon.svg" alt="" />
+          <div class="info__info payment__info">
+            No payment is needed now. You will be charged directly at the clinic
+            when you arrive.
+          </div>
+        </div>
+      </section>
+
+      <!-- review section -->
+      <section class="reviews section">
+        <div class="reviews__top">
+          <h3 class="subtitle">Ratings & Reviews</h3>
+          <div class="clinic__rating">
+            <div class="reviews__rate">
+              <img src="images/Star.svg" alt="star" class="star" />
+              <p class="clinic__rating-text">4.9 Excellent</p>
+            </div>
+            <div class="dividing-dot"></div>
+            <p class="clinic__rating-text">328 reviewes</p>
+          </div>
+        </div>
+        <div class="hidden-content characteristic">
+          <p>Hidden content</p>
+        </div>
+        <div class="view-more">
+          <div class="grey-line"></div>
+          <div class="view-more__text">
+           <span> View more</span> <img src="images/arrow_down_grey.svg" alt="" />
+          </div>
+          <div class="grey-line"></div>
+        </div>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- slide1 -->
+            <div class="review swiper-slide">
+              <div class="client">
+                <div class="client__profile">
+                  <div class="client__avatar">
+                    <img
+                      src="images/user_icon.svg"
+                      alt=""
+                      class="client__photo"
+                    />
+                  </div>
+                  <div class="client__info">
+                    <p class="client__name">Omaphefo Rakwaboah</p>
+                    <div class="client__country">
+                      <img src="images/United Kingdom.svg" alt="UK" />United
+                      Kindom
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="client_rating">
+                <div class="stars">
+                  <img src="images/small_star.svg" alt="" />
+                  <img src="images/small_star.svg" alt="" />
+                  <img src="images/small_star.svg" alt="" />
+                  <img src="images/small_star.svg" alt="" />
+                  <img src="images/small_star.svg" alt="" />
+                </div>
+                <div class="verified">
+                  <p class="verified__review">Verified review</p>
+                  <img src="images/Info.svg" alt="" class="info__icon" />
+                </div>
+              </div>
+              <div class="review__content">
+                <div class="review__top">
+                  <p class="review__date">23 Nov, 2023</p>
+                  <h3 class="review__title">
+                    The whole experiens was very good
+                  </h3>
+                </div>
+                <div class="review__bottom">
+                  <div class="review__images">
+                    <img src="images/image 9.png" alt="" />
+                    <img src="images/image 10.png" alt="" />
+                    <img src="images/image 11.png" alt="" />
+                    <img src="images/image 12.png" alt="" />
+                  </div>
+                  <div class="review__text">
+                    The stay at the hospital was exellent. The hotel was very
+                    clean and the food in the bar was lovely! Doctor Gurhan
+                    Ozcan and staf were first class
+                    <p class="read-more-text hidden-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quasi totam, reprehenderit similique possimus quis
+                      necessitatibus sit ipsa sint excepturi quaerat nulla quo
+                      quam aliquam a corrupti pariatur ea vero cupiditate.
+                    </p>
+                    <p class="read-more">Read more</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- slide2 -->
+            <div class="review swiper-slide">
+              <div class="client">
+                <div class="client__profile">
+                  <div class="client__avatar">
+                    <img
+                      src="images/user_icon.svg"
+                      alt=""
+                      class="client__photo"
+                    />
+                  </div>
+                  <div class="client__info">
+                    <p class="client__name">Boring Guy</p>
+                    <div class="client__country">
+                      <img src="images/United Kingdom.svg" alt="UK" />United
+                      Kindom
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="client_rating">
+                <div class="stars">
+                  <img src="images/small_star.svg" alt="" />
+                </div>
+                <div class="verified">
+                  <p class="verified__review">Verified review</p>
+                  <img src="images/Info.svg" alt="" class="info__icon" />
+                </div>
+              </div>
+              <div class="review__content">
+                <div class="review__top">
+                  <p class="review__date">23 Nov, 2023</p>
+                  <h3 class="review__title">
+                    The whole experiens was very good
+                  </h3>
+                </div>
+                <div class="review__bottom">
+                  <div class="review__images">
+                    <img src="images/image 9.png" alt="" />
+                    <img src="images/image 10.png" alt="" />
+                    <img src="images/image 11.png" alt="" />
+                    <img src="images/image 12.png" alt="" />
+                  </div>
+                  <div class="review__text">
+                    The stay at the hospital was exellent. The hotel was very
+                    clean and the food in the bar was lovely! Doctor Gurhan
+                    Ozcan and staf were first class
+                    <p class="read-more-text hidden-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quasi totam, reprehenderit similique possimus quis
+                      necessitatibus sit ipsa sint excepturi quaerat nulla quo
+                      quam aliquam a corrupti pariatur ea vero cupiditate.
+                    </p>
+                    <p class="read-more">Read more</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- slide3 -->
+            <div class="review swiper-slide">
+              <div class="client">
+                <div class="client__profile">
+                  <div class="client__avatar">
+                    <img
+                      src="images/user_icon.svg"
+                      alt=""
+                      class="client__photo"
+                    />
+                  </div>
+                  <div class="client__info">
+                    <p class="client__name">Cool Guy</p>
+                    <div class="client__country">
+                      <img src="images/United Kingdom.svg" alt="UK" />United
+                      Kindom
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="client_rating">
+                <div class="stars">
+                  <img src="images/small_star.svg" alt="" />
+                  <img src="images/small_star.svg" alt="" />
+                  <img src="images/small_star.svg" alt="" />
+                  <img src="images/small_star.svg" alt="" />
+                  <img src="images/small_star.svg" alt="" />
+                </div>
+                <div class="verified">
+                  <p class="verified__review">Verified review</p>
+                  <img src="images/Info.svg" alt="" class="info__icon" />
+                </div>
+              </div>
+              <div class="review__content">
+                <div class="review__top">
+                  <p class="review__date">23 Nov, 2023</p>
+                  <h3 class="review__title">
+                    The whole experiens was very good
+                  </h3>
+                </div>
+                <div class="review__bottom">
+                  <div class="review__images">
+                    <img src="images/image 9.png" alt="" />
+                    <img src="images/image 10.png" alt="" />
+                    <img src="images/image 11.png" alt="" />
+                    <img src="images/image 12.png" alt="" />
+                  </div>
+                  <div class="review__text">
+                    The stay at the hospital was exellent. The hotel was very
+                    clean and the food in the bar was lovely! Doctor Gurhan
+                    Ozcan and staf were first class
+                    <p class="read-more-text hidden-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quasi totam, reprehenderit similique possimus quis
+                      necessitatibus sit ipsa sint excepturi quaerat nulla quo
+                      quam aliquam a corrupti pariatur ea vero cupiditate.
+                    </p>
+                    <p class="read-more">Read more</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide4 -->
+            <div class="review swiper-slide">
+              <div class="client">
+                <div class="client__profile">
+                  <div class="client__avatar">
+                    <img
+                      src="images/user_icon.svg"
+                      alt=""
+                      class="client__photo"
+                    />
+                  </div>
+                  <div class="client__info">
+                    <p class="client__name">Smart Guy</p>
+                    <div class="client__country">
+                      <img src="images/United Kingdom.svg" alt="UK" />United
+                      Kindom
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="client_rating">
+                <div class="stars">
+                  <img src="images/small_star.svg" alt="" />
+                  <img src="images/small_star.svg" alt="" />
+                  <img src="images/small_star.svg" alt="" />
+                  <img src="images/small_star.svg" alt="" />
+                </div>
+                <div class="verified">
+                  <p class="verified__review">Verified review</p>
+                  <img src="images/Info.svg" alt="" class="info__icon" />
+                </div>
+              </div>
+              <div class="review__content">
+                <div class="review__top">
+                  <p class="review__date">23 Nov, 2023</p>
+                  <h3 class="review__title">
+                    The whole experiens was very good
+                  </h3>
+                </div>
+                <div class="review__bottom">
+                  <div class="review__images">
+                    <img src="images/image 9.png" alt="" />
+                    <img src="images/image 10.png" alt="" />
+                    <img src="images/image 11.png" alt="" />
+                    <img src="images/image 12.png" alt="" />
+                  </div>
+                  <div class="review__text">
+                    The stay at the hospital was exellent. The hotel was very
+                    clean and the food in the bar was lovely! Doctor Gurhan
+                    Ozcan and staf were first class
+                    <p class="read-more-text hidden-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quasi totam, reprehenderit similique possimus quis
+                      necessitatibus sit ipsa sint excepturi quaerat nulla quo
+                      quam aliquam a corrupti pariatur ea vero cupiditate.
+                    </p>
+                    <p class="read-more">Read more</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- slide5 -->
+            <div class="review swiper-slide">
+              <div class="client">
+                <div class="client__profile">
+                  <div class="client__avatar">
+                    <img
+                      src="images/user_icon.svg"
+                      alt=""
+                      class="client__photo"
+                    />
+                  </div>
+                  <div class="client__info">
+                    <p class="client__name">Awesome Guy</p>
+                    <div class="client__country">
+                      <img src="images/United Kingdom.svg" alt="UK" />United
+                      Kindom
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="client_rating">
+                <div class="stars">
+                  <img src="images/small_star.svg" alt="" />
+                  <img src="images/small_star.svg" alt="" />
+                  <img src="images/small_star.svg" alt="" />
+                </div>
+                <div class="verified">
+                  <p class="verified__review">Verified review</p>
+                  <img src="images/Info.svg" alt="" class="info__icon" />
+                </div>
+              </div>
+              <div class="review__content">
+                <div class="review__top">
+                  <p class="review__date">23 Nov, 2023</p>
+                  <h3 class="review__title">
+                    The whole experiens was very good
+                  </h3>
+                </div>
+                <div class="review__bottom">
+                  <div class="review__images">
+                    <img src="images/image 9.png" alt="" />
+                    <img src="images/image 10.png" alt="" />
+                    <img src="images/image 11.png" alt="" />
+                    <img src="images/image 12.png" alt="" />
+                  </div>
+                  <div class="review__text">
+                    The stay at the hospital was exellent. The hotel was very
+                    clean and the food in the bar was lovely! Doctor Gurhan
+                    Ozcan and staf were first class
+                    <p class="read-more-text hidden-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quasi totam, reprehenderit similique possimus quis
+                      necessitatibus sit ipsa sint excepturi quaerat nulla quo
+                      quam aliquam a corrupti pariatur ea vero cupiditate.
+                    </p>
+                    <p class="read-more">Read more</p>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <!-- slide 6 -->
+             <div class="review swiper-slide">
+              <div class="client">
+                <div class="client__profile">
+                  <div class="client__avatar">
+                    <img
+                      src="images/user_icon.svg"
+                      alt=""
+                      class="client__photo"
+                    />
+                  </div>
+                  <div class="client__info">
+                    <p class="client__name">Sad Guy</p>
+                    <div class="client__country">
+                      <img src="images/United Kingdom.svg" alt="UK" />United
+                      Kindom
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="client_rating">
+                <div class="stars">
+                  <img src="images/small_star.svg" alt="" />
+                  <img src="images/small_star.svg" alt="" />
+                  <img src="images/small_star.svg" alt="" />
+                  <img src="images/small_star.svg" alt="" />
+                </div>
+                <div class="verified">
+                  <p class="verified__review">Verified review</p>
+                  <img src="images/Info.svg" alt="" class="info__icon" />
+                </div>
+              </div>
+              <div class="review__content">
+                <div class="review__top">
+                  <p class="review__date">23 Nov, 2023</p>
+                  <h3 class="review__title">
+                    The whole experiens was very good
+                  </h3>
+                </div>
+                <div class="review__bottom">
+                  <div class="review__images">
+                    <img src="images/image 9.png" alt="" />
+                    <img src="images/image 10.png" alt="" />
+                    <img src="images/image 11.png" alt="" />
+                    <img src="images/image 12.png" alt="" />
+                  </div>
+                  <div class="review__text">
+                    The stay at the hospital was exellent. The hotel was very
+                    clean and the food in the bar was lovely! Doctor Gurhan
+                    Ozcan and staf were first class
+                    <p class="read-more-text hidden-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quasi totam, reprehenderit similique possimus quis
+                      necessitatibus sit ipsa sint excepturi quaerat nulla quo
+                      quam aliquam a corrupti pariatur ea vero cupiditate.
+                    </p>
+                    <p class="read-more">Read more</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- price section -->
+      <section class="price section">
+        <h3 class="subtitle">Price</h3>
+        <div class="price__value">
+          <div class="price__symbol">$-</div>
+          <div class="price__total">Complete option to get a cost estimate</div>
+        </div>
+        <div class="price__buttons">
+          <button class="button__accept button">
+            <img src="images/plus.svg" alt="" />Add to my request
+          </button>
+          <button class="button__not-sure button">Not sure</button>
+        </div>
+      </section>
+      <footer>
+        <div class="home-indicator"></div>
+      </div>
+      </footer>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
